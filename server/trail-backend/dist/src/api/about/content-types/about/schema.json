@@ -1,0 +1,64 @@
+{
+    "kind": "singleType",
+    "collectionName": "abouts",
+    "info": {
+        "singularName": "about",
+        "pluralName": "abouts",
+        "displayName": "About",
+        "description": "Write about yourself and the content you create"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "entry": {
+            "type": "string"
+        },
+        "Date": {
+            "type": "datetime"
+        },
+        "Location": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "blocks"
+        },
+        "Mood": {
+            "type": "enumeration",
+            "enum": [
+                "Peaceful",
+                "Adventerous",
+                "Tiring",
+                "Exiciting",
+                "Overwhelmed",
+                "Dopamine-rush"
+            ]
+        },
+        "Tags": {
+            "type": "string"
+        },
+        "Photo": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Latitude": {
+            "type": "decimal"
+        },
+        "Longtitude": {
+            "type": "decimal"
+        },
+        "Distance": {
+            "type": "decimal"
+        },
+        "Elevation": {
+            "type": "decimal"
+        }
+    }
+}
