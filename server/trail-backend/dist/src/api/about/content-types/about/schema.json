@@ -1,10 +1,10 @@
 {
-    "kind": "singleType",
+    "kind": "collectionType",
     "collectionName": "abouts",
     "info": {
         "singularName": "about",
         "pluralName": "abouts",
-        "displayName": "About",
+        "displayName": "entry",
         "description": "Write about yourself and the content you create"
     },
     "options": {
@@ -12,7 +12,7 @@
     },
     "pluginOptions": {},
     "attributes": {
-        "entry": {
+        "Title": {
             "type": "string"
         },
         "Date": {

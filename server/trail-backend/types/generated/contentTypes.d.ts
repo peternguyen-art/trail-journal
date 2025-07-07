@@ -410,11 +410,11 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiAboutAbout extends Struct.SingleTypeSchema {
+export interface ApiAboutAbout extends Struct.CollectionTypeSchema {
   collectionName: 'abouts';
   info: {
     description: 'Write about yourself and the content you create';
-    displayName: 'About';
+    displayName: 'entry';
     pluralName: 'abouts';
     singularName: 'about';
   };
@@ -429,7 +429,6 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     Description: Schema.Attribute.Blocks;
     Distance: Schema.Attribute.Decimal;
     Elevation: Schema.Attribute.Decimal;
-    entry: Schema.Attribute.String;
     Latitude: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
@@ -452,6 +451,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     >;
     publishedAt: Schema.Attribute.DateTime;
     Tags: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
